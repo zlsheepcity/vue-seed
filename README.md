@@ -1,8 +1,9 @@
 # vue-seed
 
-We grow a project from a seed.
+A project grows from a seed.
 
-# Software installation
+
+## Required software
 
     Documentation:
     https://cli.vuejs.org/
@@ -12,11 +13,27 @@ npm install -g @vue/cli @vue/cli-service-global
 
 ```
 
-# New Project by `vue-cli`
+## New project from seed
+
+```bash
+npm install
+npm run serve
+npm run build
+
+```
+
+## New project with `vue-cli`
 
 ```bash
 vue create project-name
-cd project-name
+
+```
+
+# Common plugins
+
+```bash
 vue add vuetify
 
 ```
+
+[Customize configuration](https://cli.vuejs.org/config/)

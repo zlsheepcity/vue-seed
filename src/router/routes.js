@@ -1,18 +1,15 @@
 /* URL List */
 
-export default
-
-[
-
-///*/// ----------------------------
-
+export default [
 
     {
         component: () => import(
             /* webpackChunkName: "Home" */
                         '../views/Home.vue'),
             name:                'Home',
+            alias:              '/Home',
             path:               '/',
+            
     },
 
     {
@@ -27,8 +24,11 @@ export default
 
     {
         path:  '/page-not-found',
-        alias: '*',
+        alias: '/*',
         component: { render: (h) => h('div', ['404, Page Not Found']) },
+        meta: {
+            requiresAuthorisation: false,
+        },
     }
 
 
