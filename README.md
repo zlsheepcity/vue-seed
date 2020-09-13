@@ -8,6 +8,9 @@ A project grows from a seed.
     Documentation:
     https://cli.vuejs.org/
 
+    Customize configuration:
+    https://cli.vuejs.org/config/
+
 ```bash
 npm install -g @vue/cli @vue/cli-service-global
 
@@ -35,5 +38,3 @@ vue create project-name
 vue add vuetify
 
 ```
-
-[Customize configuration](https://cli.vuejs.org/config/)
