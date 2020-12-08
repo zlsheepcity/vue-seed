@@ -1,7 +1,24 @@
+### todo
+
+import SASS/SCSS into every component  
+
+```js
+// vue.config.js
+module.exports = {
+  css: {
+    loaderOptions: {
+      sass: {
+        additionalData: `@import "@/assets/_shared.scss";`,  // Vue CLI 4
+        // data: `@import "@/assets/_shared.scss";`,         // Vue CLI 3
+      },
+    },
+  },
+};
+```
+
 # vue-seed
 
 A project grows from a seed.
-
 
 ## Required software
 
