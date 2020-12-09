@@ -1,57 +1,30 @@
-### todo
+# vue-seed
+v2020.12.9
 
-import SASS/SCSS into every component  
+Quick project source and snippets  
+Vue.js 2/3  
 
-```js
-// vue.config.js
-module.exports = {
-  css: {
-    loaderOptions: {
-      sass: {
-        additionalData: `@import "@/assets/_shared.scss";`,  // Vue CLI 4
-        // data: `@import "@/assets/_shared.scss";`,         // Vue CLI 3
-      },
-    },
-  },
-};
+
+----------------------------
+
+## Develop
+
+```BASH
+npm install
+npm run serve
+npm run build
 ```
 
-# vue-seed
+### Required software
 
-A project grows from a seed.
-
-## Required software
-
-    Documentation:
+    Documentation:  
     https://cli.vuejs.org/
 
-    Customize configuration:
+    Customize configuration:  
     https://cli.vuejs.org/config/
 
-```bash
+```BASH
 npm install -g @vue/cli @vue/cli-service-global
 
 ```
 
-## New project from seed
-
-```bash
-npm install
-npm run serve
-npm run build
-
-```
-
-## New project with `vue-cli`
-
-```bash
-vue create project-name
-
-```
-
-# Common plugins
-
-```bash
-vue add vuetify
-
-```

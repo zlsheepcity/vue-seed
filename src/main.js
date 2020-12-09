@@ -1,33 +1,35 @@
-/** seed main
-    2020.9.11
- */
+let RUN = {}
 
-///*/// ---------------------------- Framework Environment
+// ---------------------------- use framework
 
-import Vue    from 'vue'
-import App    from './App.vue'
-const  AppID  = '#app'
-let    VueDNA = {}
+import Vue     from 'vue'
+import router  from './framework/router'
+import store   from './framework/store'
+import vuetify from './framework/vuetify';
 
-Vue.config.productionTip = false
+RUN = {
+   router,
+   store,
+   vuetify,
+...RUN }
 
-///*/// Render
+import wrap    from './framework/vue-wrap';
+import debug   from './framework/vue-debug';
+Vue.component( 'wrap',  wrap  )
+Vue.component( 'debug', debug )
 
-VueDNA = {
-    render: function (h) { return h(App) },
-...VueDNA }
+// ---------------------------- project data
 
-///*/// Router
+// ---------------------------- app
 
-import router  from './router'
-VueDNA = { ...VueDNA, router }
+import App from './App.vue'
+const  DOM_id = '#app'
+const  render = f => f(App)
 
-///*/// Store
+RUN = {
+    render,
+...RUN }
 
-import store   from './store'
-VueDNA = { ...VueDNA, store }
+// Run!
 
-
-///*/// ---------------------------- App Render
-
-new Vue(VueDNA).$mount(AppID)
+new Vue({...RUN}).$mount(DOM_id)

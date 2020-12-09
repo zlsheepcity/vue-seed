@@ -1,14 +1,19 @@
 <template>
-<section>
+    <wrap>
 
-    <h1>Home View</h1>
+    <section>
+        <v-container>
 
-</section>
+
+
+        </v-container>
+    </section>
+
+    </wrap>
 </template>
 
 <script>
-
-///*/// ---------------------------- export seed
+// ---------------------------- define export
 
     let props       = []
     let components  = {}
@@ -17,27 +22,21 @@
     let watch       = {}
     let data        = {}
 
-///*/// ----------------------------
+// ---------------------------- main logic
 
 
 
-///*/// ---------------------------- export ready
+// ---------------------------- export ready
 
 export default {
-
-    name: 'Home',
+    name: 'SomeComponent',
     props,
     components,
     methods,
     computed,
     watch,
     data () { return data },
-
-    mounted () {
-        document.title = 'Home'
-    },
-
 }
 
-///*/// ---------------------------- END
+// ---------------------------- end script
 </script>
