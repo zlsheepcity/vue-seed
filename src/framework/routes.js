@@ -23,8 +23,8 @@ let Routes = [
             /* webpackChunkName: "Dev_blog" */
                         '../views/Dev_blog.vue'),
             name:                'Dev_blog',
-            path:               '/Dev_blog/:id',
-            props: true, // props = [ ...props, 'id' ]
+            path:               '/Dev_blog/:pageid',
+            props: true, // props = [ ...props, 'pageid' ]
     },
 
 ]

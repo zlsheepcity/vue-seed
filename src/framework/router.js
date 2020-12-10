@@ -1,7 +1,7 @@
 /* Router HQ */
 
 let RouterDNA = {
-    mode: 'history',
+ // mode: 'history',
     base: '',
 }
 
@@ -9,7 +9,6 @@ let RouterDNA = {
 
 import routes from './routes.js'
 RouterDNA = { ...RouterDNA, routes }
-
 
 // use router
 
@@ -19,7 +18,8 @@ Vue.use(VueRouter)
 
 // custom settings
 
+
 // ---------------------------- export ready
 
-const Router = new VueRouter(RouterDNA)
-export default Router
+const router = new VueRouter(RouterDNA)
+export default router
