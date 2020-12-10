@@ -40,8 +40,7 @@
 
     // use router
     computed = { ...computed, Router ()   { return this.$router } }
-    methods  = { ...methods,  GoTo (path) { return this.$router.push(path) } }
-    methods  = { ...methods,  goto (path) { let RNA=this; return f=>RNA.GoTo(path) } }
+    methods  = { ...methods,  goto (path) { return this.$router.push(path) } }}
 
 
 // ---------------------------- export ready
